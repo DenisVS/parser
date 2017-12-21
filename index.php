@@ -1,6 +1,7 @@
 <?php
 
 include_once 'includes/classes.php';
+include_once 'plugins/orelmebel_ru.txt';
 
 $maths = new Curl;
 $maths->param['usragent']= 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.8.1.1) Gecko/20161204 Firefox/42.1';

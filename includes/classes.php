@@ -105,7 +105,18 @@ class Curl {
         $this->param['page'] = curl_exec($this->ch);
         return curl_getinfo($this->ch);
         curl_close($this->ch);
-       
     }
+
 }
 
+class dlPrepare {
+
+    public $param;
+
+    function __construct() {
+        $this->param['usragent'] = 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.8.1.1) Gecko/20161204 Firefox/42.1';
+        $this->param['link'] = 'http://wiki.example.com';
+        $this->param['cookie'] = "cookie.txt";
+    }
+
+}
