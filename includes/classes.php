@@ -127,6 +127,7 @@ class dlPrepare {
         $this->html = $maths->exec();
         echo ' Method Construct works properly';
         print_r($this->param);
+        print_r($this->html);
     }
 
 }
