@@ -12,3 +12,4 @@ $maths->param['link'] = 'http://wiki.example.com';
 $maths->param['cookie'] = "cookie.txt";
 echo $maths->html;
 echo 'Its works!';
+echo $maths->param['link'];
