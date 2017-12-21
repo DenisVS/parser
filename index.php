@@ -1,7 +1,7 @@
 <?php
 
 include_once 'includes/classes.php';
-include_once 'plugins/orelmebel_ru.txt';
+include_once 'plugins/orelmebel_ru.php';
 
 
 /*
