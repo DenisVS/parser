@@ -122,7 +122,7 @@ class dlPrepare {
         $maths->param['usragent']= 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.8.1.1) Gecko/20161204 Firefox/42.1';
         $maths->param['link'] = $this->param['link'];
         $maths->param['cookie'] = $this->param['cookie'];
-        $html = $maths->exec();
+        $this->html = $maths->exec();
         //return($maths->status());
     }
 
