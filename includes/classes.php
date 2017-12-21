@@ -124,8 +124,7 @@ class dlPrepare {
         $maths->param['link'] = $this->param['link'];
         $maths->param['cookie'] = $this->param['cookie'];
         $this->html = $maths->exec();
-
-        //return($maths->status());
+        echo ' Method Construct works properly';
     }
 
 }
