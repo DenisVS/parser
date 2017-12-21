@@ -111,10 +111,10 @@ class Curl {
 
 class dlPrepare {
 
-    //public $param;
+    public $param;
     public $html;
 
-    function dl($param) {
+    function dl() {
         // $this->param['usragent'] = 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.8.1.1) Gecko/20161204 Firefox/42.1';
         //$this->param['link'] = 'http://wiki.example.com';
         //$this->param['cookie'] = "cookie.txt";
