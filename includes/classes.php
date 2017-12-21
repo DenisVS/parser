@@ -122,10 +122,10 @@ class dlPrepare {
 
         $adfgReee = new Curl;
         $adfgReee->param['usragent'] = 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.8.1.1) Gecko/20161204 Firefox/42.1';
-        $adfgReee->param['link'] = $param['link'];
-        $adfgReee->param['cookie'] = $param['cookie'];
+        $adfgReee->param['link'] = $this->param['link'];
+        $adfgReee->param['cookie'] = $this->param['cookie'];
         $this->html = $adfgReee->exec();
-        echo ' Method Construct works properly';
+        //echo ' Method Construct works properly';
         echo($param);
         print_r($param);
         print_r($this->html);
