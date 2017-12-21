@@ -11,3 +11,4 @@ $maths->param['usragent']= 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1
 $maths->param['link'] = 'http://wiki.example.com';
 $maths->param['cookie'] = "cookie.txt";
 echo $maths->html;
+echo 'Its works!';
