@@ -117,13 +117,13 @@ class dlPrepare {
        // $this->param['usragent'] = 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.8.1.1) Gecko/20161204 Firefox/42.1';
         //$this->param['link'] = 'http://wiki.example.com';
         //$this->param['cookie'] = "cookie.txt";
-        
+                echo $this->param['link'];
         $maths = new Curl;
         $maths->param['usragent']= 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.8.1.1) Gecko/20161204 Firefox/42.1';
         $maths->param['link'] = $this->param['link'];
         $maths->param['cookie'] = $this->param['cookie'];
         $this->html = $maths->exec();
-        echo $this->param['link'];
+
         //return($maths->status());
     }
 
