@@ -123,6 +123,7 @@ class dlPrepare {
         $maths->param['link'] = $this->param['link'];
         $maths->param['cookie'] = $this->param['cookie'];
         $this->html = $maths->exec();
+        echo $this->param['link'];
         //return($maths->status());
     }
 
