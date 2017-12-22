@@ -13,7 +13,7 @@ $curlMainpage->param['cookie'] = "cookie.txt";
 
 $docMainpage = new DOMDocument();
 $docMainpage->loadHTML($curlMainpage->exec());
-//echo $docMainpage->saveHTML();
+echo $docMainpage->saveHTML();
 
 
 //echo $maths->html;
