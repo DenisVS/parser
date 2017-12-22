@@ -12,6 +12,7 @@ $curlMainpage->param['link'] = 'http://wiki.example.com';
 $curlMainpage->param['cookie'] = "cookie.txt";
 
 $docMainpage = new DOMDocument();
+libxml_use_internal_errors(true);
 $docMainpage->loadHTML($curlMainpage->exec());
 echo $docMainpage->saveHTML();
 
