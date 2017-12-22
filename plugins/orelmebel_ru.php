@@ -7,7 +7,7 @@
  */
 //echo $uaFile.' uaFile';
 $curlMainpage = new Curl;
-$curlMainpage->param['header'] = TRUE;
+//$curlMainpage->param['header'] = TRUE;
 $curlMainpage->param['usragent']= randUa($uaFile);
 //$curlMainpage->param['link'] = 'http://wiki.example.com';
 $curlMainpage->param['link'] = 'http://orelmebel.ru/';
