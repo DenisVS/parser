@@ -9,7 +9,7 @@
 $curlMainpage = new Curl;
 $curlMainpage->param['usragent']= randUa($uaFile);
 $curlMainpage->param['link'] = 'http://wiki.example.com';
-$curlMainpage->param['link'] = 'http://ya.ru';
+//$curlMainpage->param['link'] = 'http://ya.ru';
 $curlMainpage->param['cookie'] = "cookie.txt";
 
 libxml_use_internal_errors(true);
