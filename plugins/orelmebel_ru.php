@@ -11,8 +11,8 @@ $curlMainpage->param['usragent']= randUa($uaFile);
 $curlMainpage->param['link'] = 'http://wiki.example.com';
 $curlMainpage->param['cookie'] = "cookie.txt";
 
-$docMainpage = new DOMDocument();
 libxml_use_internal_errors(true);
+$docMainpage = new DOMDocument();
 $docMainpage->loadHTML($curlMainpage->exec());
 echo $docMainpage->saveHTML();
 
