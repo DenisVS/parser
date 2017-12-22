@@ -3,7 +3,7 @@
 include_once 'includes/classes.php';
 include_once 'includes/functions.php';
 include_once 'plugins/orelmebel_ru.php';
-$uaFile = 'ua.txt';
+$uaFile = 'includes/ua.txt';
 
 /*
 $maths = new Curl;
