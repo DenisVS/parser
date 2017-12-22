@@ -55,6 +55,7 @@ class Curl {
         
         if ($this->param['encoding']) {
             curl_setopt($this->ch, CURLOPT_ENCODING, $this->param['encoding']);
+            curl_setopt($this->ch, CURLOPT_ENCODING, '');
         }
                 
         $this->param['page'] = curl_exec($this->ch);
