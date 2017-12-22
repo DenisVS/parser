@@ -11,7 +11,7 @@ $curlMainpage->param['usragent']= randUa($uaFile);
 //$curlMainpage->param['link'] = 'http://wiki.example.com';
 $curlMainpage->param['link'] = 'http://orelmebel.ru/';
 $curlMainpage->param['cookie'] = "cookie.txt";
-$curlMainpage->param['encoding'] = 'CP1251';
+$curlMainpage->param['encoding'] = 'CP-1251';
 libxml_use_internal_errors(true);
 $docMainpage = new DOMDocument();
 $docMainpage->loadHTML($curlMainpage->exec());
