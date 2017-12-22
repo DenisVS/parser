@@ -16,8 +16,9 @@ $curlMainpage->param['encoding'] = 'windows-1251';
 libxml_use_internal_errors(true);
 $docMainpage = new DOMDocument();
 $docMainpage->loadHTML($curlMainpage->exec());
-echo $docMainpage->saveHTML();
 
+//echo $docMainpage->saveHTML();
+echo mb_convert_encoding($docMainpage->saveHTML(), 'HTML-ENTITIES', 'UTF-8');
 
 //echo $maths->html;
 //echo 'Its works!';
