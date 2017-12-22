@@ -52,7 +52,11 @@ class Curl {
         if ($this->param['headers']) {
             curl_setopt($this->ch, CURLOPT_HTTPHEADER, $this->param['headers']);
         } //добавляем заголовков к нашему запросу. Чтоб смахивало на настоящих
-
+        
+        if ($this->param['encoding']) {
+            curl_setopt($this->ch, CURLOPT_ENCODING, $this->param['encoding'])
+        }
+                
         $this->param['page'] = curl_exec($this->ch);
         curl_close($this->ch);
 
