@@ -54,7 +54,7 @@ class Curl {
         } //добавляем заголовков к нашему запросу. Чтоб смахивало на настоящих
         
         if ($this->param['encoding']) {
-            curl_setopt($this->ch, CURLOPT_ENCODING, $this->param['encoding'])
+            curl_setopt($this->ch, CURLOPT_ENCODING, $this->param['encoding']);
         }
                 
         $this->param['page'] = curl_exec($this->ch);
