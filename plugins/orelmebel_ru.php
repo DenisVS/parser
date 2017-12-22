@@ -21,10 +21,10 @@ $docMainpage->loadHTML($curlMainpage->exec());
 //echo $docMainpage->saveHTML();
 
 
-//echo mb_convert_encoding ($docMainpage->saveHTML(), "utf-8", "windows-1251");
+echo mb_convert_encoding ($docMainpage->saveHTML(), "utf-8", "windows-1251");
 
 
-echo mb_convert_encoding($docMainpage->saveHTML(), 'HTML-ENTITIES', 'UTF-8');
+//echo mb_convert_encoding($docMainpage->saveHTML(), 'HTML-ENTITIES', 'UTF-8');
 
 //echo $maths->html;
 //echo 'Its works!';
