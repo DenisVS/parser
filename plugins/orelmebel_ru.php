@@ -5,12 +5,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-echo $uaFile.' uaFile';
-$maths = new Curl;
-$maths->param['usragent']= randUa($uaFile);
-$maths->param['link'] = 'http://wiki.example.com';
-$maths->param['cookie'] = "cookie.txt";
-echo $maths->exec();
+//echo $uaFile.' uaFile';
+$curlMainpage = new Curl;
+$curlMainpage->param['usragent']= randUa($uaFile);
+$curlMainpage->param['link'] = 'http://wiki.example.com';
+$curlMainpage->param['cookie'] = "cookie.txt";
+
+$docMainpage = new DOMDocument();
+$docMainpage->loadHTML($curlMainpage->exec());
+echo $docMainpage->saveHTML();
+
+
 //echo $maths->html;
 //echo 'Its works!';
 //echo $maths->param['link'];   //*/
