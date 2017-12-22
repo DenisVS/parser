@@ -5,7 +5,7 @@ class Curl {
     public $param;
 
     function __construct() {
-        $this->param['header'] = 1;
+        $this->param['header'] = 0;
         $this->param['follow'] = 1;
         $this->param['usragent'] = 0;
         $this->param['proxy'] = false;
