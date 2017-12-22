@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+echo $uaFile;
 $maths = new Curl;
 $maths->param['usragent']= randUa($uaFile);
 $maths->param['link'] = 'http://wiki.example.com';
