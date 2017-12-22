@@ -14,3 +14,16 @@ echo $maths->exec();
 //echo $maths->html;
 //echo 'Its works!';
 //echo $maths->param['link'];   //*/
+
+/*
+arse (url)
+dom (param)
+foreach (param) {
+  parse (url)
+  dom (param)
+  foreach (param) {
+
+  }
+}
+
+//*/
