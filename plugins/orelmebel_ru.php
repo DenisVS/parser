@@ -12,8 +12,8 @@ $curlMainpage->param['link'] = 'http://wiki.example.com';
 $curlMainpage->param['cookie'] = "cookie.txt";
 
 $docMainpage = new DOMDocument();
-$docMainpage->loadHTML($curlMainpage->exec());
-echo $docMainpage->saveHTML();
+//$docMainpage->loadHTML($curlMainpage->exec());
+//echo $docMainpage->saveHTML();
 
 
 //echo $maths->html;
