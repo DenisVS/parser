@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 echo $uaFile;
-$maths = new Curl;
+/*$maths = new Curl;
 $maths->param['usragent']= randUa($uaFile);
 $maths->param['link'] = 'http://wiki.example.com';
 $maths->param['cookie'] = "cookie.txt";
